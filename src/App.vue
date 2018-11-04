@@ -1,17 +1,11 @@
 <template>
   <div id="app">
   <!-- 头部区域 -->
-  <app-header></app-header>
+     <app-header></app-header>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-3 col-md-2 sidebar">
-        <ul class="nav nav-sidebar">
-          <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Reports</a></li>
-          <li><a href="#">Analytics</a></li>
-          <li><a href="#">Export</a></li>
-        </ul>
-      </div>
+     <!-- 侧边栏 -->
+<app-sidebar></app-sidebar>
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
         <h2 class="sub-header">Hero List</h2>
         <a class="btn btn-success" href="add.html">Add</a>
@@ -231,9 +225,11 @@
 
 <script>
 import AppHeader from './components/appHeader'
+import AppSidebar from './components/appSidebar'
 export default {
   components:{
-    AppHeader
+    AppHeader,
+    AppSidebar
   }
 }
 </script>
